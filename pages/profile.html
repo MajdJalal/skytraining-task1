@@ -12,151 +12,160 @@
 <body>
     <main>
       
-      <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-        <div class="container-fluid nav-header">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item" id="nav-home">
-                <a class="nav-link" href="./home.html">Home</a>
-              </li>
-              <li class="nav-item" id="nav-profile">
-                <a class="nav-link" href="./profile.html">Profiles</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Reports</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Settings</a>
-              </li>
-            </ul>
-
-            <ul class="navbar-nav nav-icons">
-                <li class="nav-item mx-2">
-                    <i class="fa-solid fa-bell"></i>
-                </li>
-                <li class="nav-item mx-2">
-                    <i class="fa-regular fa-user"></i>
-                </li>
-              </ul>
-        </div>
-
-      </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-success" id="navbar"></nav>
 
 
         <section id="about" class="m-3 border border-3 rounded bg-light">
             
 
-          <div class="d-flex align-items-center p-2 border rounded ">
+          <div class="d-flex justify-content-between p-2  rounded ">
+            <span class="d-flex align-items-center p-2">
             <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmFjZXxlbnwwfHwwfHx8MA%3D%3D" 
                  alt="Ahmad Azmi" class="rounded-circle" style="width: 50px; height: 50px;">
-            <div class="ml-3">
+            <div class="mx-2">
                 <strong class="d-block">Ahmad Azmi</strong>
                 <span class="d-block">Marketing Department</span>
                 <small class="text-muted">Junior Accounting Officer</small>
             </div>
-            <div class="ml-auto m-3">
-              <a href="#" class="btn btn-success">New Request</a>
+          </span>
+            <div class="ml-auto">
+              <button type="button" class="btn btn-success m-3">New Request</button>
             </div>
           </div>
               
-              <div class="row">
-
-                <div class="col">
-                  <i class="fa fa-user"></i> Reporting To: Salwa Assem
-                </div>
-                <div class="col">
-                  <i class="fa fa-chart-bar"></i> Corporate Level: Level 10
-                </div>
-                <div class="col">
-                  <i class="fa fa-clock"></i> Lifetime: 2.5 Years
-                </div>
-                <div class="col">
-                  <i class="fa fa-calendar"></i> Vacation Days Left: 10 Days
-                </div>
-                <div class="col">
-                  <i class="fa fa-plus-circle"></i> Sick Days Left: 14 Days
-                </div>
-                
-              </div>
-
-        </section>
-
-        <section id="history" class=" container m-3 border border-3 rounded bg-light">
-                <div class="container mt-4">
+          <div id="user-statistics" class="d-flex flex-wrap">
+                      <div class="d-flex align-items-center m-3">
+                        <i class="fa fa-user"></i>
+                        <p class="card-text mx-3"><strong>Reporting To:</strong><br> Salwa Assem</p>
+                      </div>
                     
-                  <h2><i class="fa-solid fa-list-check"></i> History</h2>
+                    <div class="d-flex align-items-center m-3">
+                        <i class="fa fa-chart-bar"></i>
+                        <p class="card-text mx-2"><strong>Corporate Level:</strong> <br>Level 10</p>
+                    </div>
+                    <div class="d-flex align-items-center m-3">
+                        <i class="fa fa-clock"></i>
+                        <p class="card-text mx-2"><strong>Lifetime:</strong> <br>2.5 Years</p>
+                    </div>
+                    <div class="d-flex align-items-center m-3">
+                        <i class="fa fa-calendar"></i>
+                        <p class="card-text mx-2"><strong>Vacation Days Left:</strong> <br>10 Days</p>
+                    </div>
+                    <div class="d-flex align-items-center m-3">
+                        <i class="fa fa-plus-circle"></i>
+                        <p class="card-text mx-2"><strong>Sick Days Left:</strong> <br>12 Days</p>
+                    </div>
+            </div>
+
+
+        </section>
+
+        <section id="history" class="  m-3 border border-3 rounded bg-light">
+                <div class=" m-2">
+                    
+                  <h4 ><i class="fa-solid fa-list-check"></i> History</h4>
                   <hr class="border-3">
-                  <div class="row">
-                    <div class="col-3 border border-3 rounded">
-                      <h4>Annual Vacation</h4>
-                        <p class="list-group-item">2/3/2023 - 10/3/2023 (8 days)</p>
-                    </div>
-                    <div class="col-3 border border-3 rounded">
-                      <h4>Sick Vacation</h4>
-                        <p class="list-group-item">2/3/2023 - 10/3/2023 (8 days)</p>
-                    </div>
-                    <div class="col-3 border border-3 rounded">
-                      <h4>Annual Vacation</h4>
-                        <p class="list-group-item">2/3/2023 - 10/3/2023 (8 days)</p>
-                    </div>
-                    <div class="col-3 border border-3 rounded">
-                      <h4>Non Paid Vacation</h4>
-                        <p class="list-group-item">2/3/2023 - 10/3/2023 (8 days)</p>
-                    </div>
+                  <div class="container">
+                    <div class="row row-cols-1 row-cols-md-4 g-3">
+                      <div class="col">
+                          <div class="p-3 border border-2 rounded bg-white shadow">
+                              <h5>Annual Vacation</h5>
+                              <p class="list-group-item">2/3/2023 - 10/3/2023 (8 days)</p>
+                              <p class="list-group-item">Approved by: Hazem Azmi</p>
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="p-3 border border-2 rounded bg-white shadow">
+                              <h5>Sick Vacation</h5>
+                              <p class="list-group-item">2/3/2023 - 10/3/2023 (8 days)</p>
+                              <p class="list-group-item">Approved by: Hazem Azmi</p>
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="p-3 border border-2 rounded bg-white shadow">
+                              <h5>Annual Vacation</h5>
+                              <p class="list-group-item">2/3/2023 - 10/3/2023 (8 days)</p>
+                              <p class="list-group-item">Approved by: Hazem Azmi</p>
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="p-3 border border-2 rounded bg-white shadow">
+                              <h5>Non Paid Vacation</h5>
+                              <p class="list-group-item">2/3/2023 - 10/3/2023 (8 days)</p>
+                              <p class="list-group-item">Approved by: Hazem Azmi</p>
+                          </div>
+                      </div>
                   </div>
-                  <div class="row">
-                    <div class="col-3 border border-3 rounded">
-                      <h4>Annual Vacation</h4>
-                        <p class="list-group-item">2/3/2023 - 10/3/2023 (8 days)</p>
+                  <div class="row row-cols-1 row-cols-md-4 g-3 mt-2">
+                    <div class="col">
+                        <div class="p-3 border border-2 rounded bg-white shadow">
+                            <h5>Annual Vacation</h5>
+                            <p class="list-group-item">2/3/2023 - 10/3/2023 (8 days)</p>
+                            <p class="list-group-item">Approved by: Hazem Azmi</p>
+                        </div>
                     </div>
-                    <div class="col-3 border border-3 rounded">
-                      <h4>Non Paid Vacation</h4>
-                        <p class="list-group-item">2/3/2023 - 10/3/2023 (8 days)</p>
+                    <div class="col">
+                        <div class="p-3 border border-2 rounded bg-white shadow">
+                            <h5>Sick Vacation</h5>
+                            <p class="list-group-item">2/3/2023 - 10/3/2023 (8 days)</p>
+                            <p class="list-group-item">Approved by: Hazem Azmi</p>
+                        </div>
                     </div>
-                    <div class="col-3 border border-3 rounded">
-                      <h4>Sick Vacation</h4>
-                        <p class="list-group-item">2/3/2023 - 10/3/2023 (8 days)</p>
+                    <div class="col">
+                        <div class="p-3 border border-2 rounded bg-white shadow">
+                            <h5>Annual Vacation</h5>
+                            <p class="list-group-item">2/3/2023 - 10/3/2023 (8 days)</p>
+                            <p class="list-group-item">Approved by: Hazem Azmi</p>
+                        </div>
                     </div>
+
+                </div>
                   </div>
-                  <div class="text-center">
-                    <button type="button" class="btn btn-success" onclick="navigateToPage()">View More</button>
+                  <div class="text-end">
+                    <a href="" class="text-success text-decoration-none fw-bold">View More ></a>
                   </div>
+            
                 </div>
         </section>
 
-        <section id="pending-requests" class="container m-3 border border-3 rounded">
-            <h2>Pending Requests</h2>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card">
-                  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmFjZXxlbnwwfHwwfHx8MA%3D%3D" class="card-img-top rounded-circle mx-auto" alt="Employee 1" style="width: 100px; height: 100px;">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Ahmad Attar</h5>
-                    <p class="card-text">Submitted on: 1/3/2024</p>
-                    <p class="card-text">Duration: 2 Weeks (1/4/2023 - 14/4/2023)</p>
-                    <p class="card-text">Currently at: Omar Ahmad</p>
+        <section id="pending-requests" class=" m-3 border border-3 rounded">
+          <div class="m-2">
+              <h4 class="mb-3"><i class="fa-solid fa-list-check"></i> Pending Requests</h4>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card shadow">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmFjZXxlbnwwfHwwfHx8MA%3D%3D" class="card-img-top rounded-circle mx-auto mt-2" alt="Employee 1" style="width: 100px; height: 100px;">
+                    <h5 class="card-title text-center">Ahmad Attar</h5>
+                    <div class="card-body text-md-left">
+                      <p class="card-text">Submitted on:<br> <span class="fw-bold">1/3/2024</span></p>
+                      <p class="card-text">Duration:<br><span class="fw-bold">2 Weeks (1/4/2023 - 14/4/2023)</span> </p>
+                      <br>
+                      <p class="card-text">Currently at:<br> <span class="text-success fw-bold">Omar Ahmad</span></p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card">
-                  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmFjZXxlbnwwfHwwfHx8MA%3D%3D" class="card-img-top rounded-circle mx-auto" alt="Employee 2" style="width: 100px; height: 100px;">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Ahmad Attar</h5>
-                    <p class="card-text">Submitted on: 1/3/2024</p>
-                    <p class="card-text">Duration: 2 Weeks (1/4/2023 - 14/4/2023)</p>
-                    <p class="card-text">Currently at: Omar Ahmad</p>
+                <div class="col-md-4">
+                  <div class="card shadow">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmFjZXxlbnwwfHwwfHx8MA%3D%3D" class="card-img-top rounded-circle mx-auto mt-2" alt="Employee 2" style="width: 100px; height: 100px;">
+                    <h5 class="card-title text-center">Ahmad Attar</h5>
+                    <div class="card-body text-md-left">
+                      <p class="card-text">Submitted on:<br><span class="fw-bold">1/3/2024</span></p>
+                      <p class="card-text">Duration:<br><span class="fw-bold">2 Weeks (1/4/2023 - 14/4/2023)</span></p>
+                      <br>
+                      <p class="card-text">Currently at:<br> <span class="text-success fw-bold">Omar Ahmad</span></p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="text-center">
-              <button type="button" class="btn btn-success" id="viewMoreButton">View More</button>
+            <div class="text-end">
+              <a href="./vacation-requests.html" class="text-success text-decoration-none fw-bold">View More ></a>
             </div>
           </section>
 
     </main>
    
       
-    <script src="vacationrequests.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
