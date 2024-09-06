@@ -517,7 +517,6 @@ function uncheckCard() {
     console.log(cards);
     cards.forEach(card => {
         card.addEventListener('click', () => {
-            // Uncheck the "Select All" checkbox and remove the border from all cards
             if(document.getElementById('select-all').checked){
                 card.classList.remove('border-5');
             }
