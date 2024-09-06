@@ -18,7 +18,7 @@ when **clicking on 'view more'** you head to all of the vacation requests avaiab
 <br>
 **Vacation-Requests Page:**
 show all vacation requests for all employees, with a **paging functionality** where data is divided across three pages that you can move between, 
-also added the **search functionality and the selection functionality** where when checked all emplyess are surrounded by a border.
+also added the **search functionality and the selection functionality** where when checked all emplyess are surrounded by a border and you can also uncheck specific cards then.
 <br>
 
 **The NavBar is dynamically loaded in three pages**, where JS **detects the page we are in based on the url**, and load the navbar tag in the html of this page...the navbar tag is stored in a variable inside the JS file .<br>
