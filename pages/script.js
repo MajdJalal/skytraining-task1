@@ -501,7 +501,7 @@ function navigateToPageProfile() {
 function toggleSelectAll() {
     const selectAllCheckbox = document.getElementById('select-all');
     const cards = document.querySelectorAll('.card');
-    
+    uncheckCard();
     cards.forEach(card => {
         if (selectAllCheckbox.checked) {
             card.classList.add('border-5');
@@ -509,6 +509,21 @@ function toggleSelectAll() {
             card.classList.remove('border-5');
         }
     });
+}
+
+// Add event listener for each card
+function uncheckCard() {
+    const cards = document.querySelectorAll('.card');
+    console.log(cards);
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            // Uncheck the "Select All" checkbox and remove the border from all cards
+            if(document.getElementById('select-all').checked){
+                card.classList.remove('border-5');
+            }
+        });
+    });
+
 }
 
 
